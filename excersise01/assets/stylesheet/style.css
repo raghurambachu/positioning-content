@@ -58,7 +58,7 @@ body{
 }
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -140,14 +140,14 @@ article{
 
 .art-content{
     float:left;
-    width: 600px;
+    width: 50%;
     padding-right: 35px;
 }
 
 
 .art-image{
     float: right;
-    width: 600px;
+    width: 50%;
 }
 
 .art-image img,
@@ -164,7 +164,7 @@ article{
 
 .art-image-inline{
     display: inline-block;
-    width: 600px;
+    width:50%;
     
 }
 
@@ -172,7 +172,7 @@ article{
 
 .art-content-inline{
     display: inline-block;
-    width: 600px; 
+    width:50%; 
     vertical-align: top;
     padding-left: 35px;
     
