@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair Programming</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="heading">
+                <h1>Side-By-Side Positioning Demo</h1>
+            </div>
+        </header>
+        <main>
+            <section class="first">
+                <div class="inline-block bor-radius first-left pad">
+                    These two divs are positioned next to one another using <span class="code">display:inline-block</span>
+                </div>
+                <div class="inline-block bor-radius first-right pad">
+                    Notice the space between them. It occurs because of my carriage return in the HTML which I've used to keep the code organised. I've used a reset to ensure no elements should have any default margins or padding. (I did add a bottom margin to make it easier to read)This space is actually a space character rendered just as it would be between two inline elements.
+                </div>
+            </section>
+
+            <section class="second clearfix">
+                <div class="second-left bor-radius pad">
+                    These two are positined using <span class="code">float : left.</span>
+                </div>
+                <div class="second-right bor-radius pad">
+                    You can see that, even though the elements are spaced in the code, the space is not actually rendered on the page. This may not be a huge deal in these first examples, but....
+                </div>
+            </section>
+            <section class="third">
+                <div class="third-left bor-radius inline-block pad">
+                    What if I want my side-by-side elemtns to take up the full width of the parent element? I can set the width of each to 50%, right?
+                </div>
+                <div class="third-right bor-radius inline-block pad">
+                    Wrong! Because, together, the two inline block elements will add up to 100% of the available width, but that doesn't account for the space between 
+                </div>
+            </section>
+            <section class="fourth clearfix">
+                <div class="fourth-left bor-radius pad">
+                    If I do the same thing with floated elements...
+                </div>
+                <div class="fourth-right bor-radius pad">
+                    The two elements are side-by-side just as I intended and fill the entire width of the parent (which, in this case, is the same as the which, in this case, is the same as the width of the viewport)
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
